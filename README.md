@@ -1,0 +1,1 @@
+# dolphin_ssh_konsole
