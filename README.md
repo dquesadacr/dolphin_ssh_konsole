@@ -1,6 +1,6 @@
 # Description
 
-Short repository with my solution to add the functionality of opening from Dolphin (KDE file manager) a ssh terminal to the current folder. 
+Short repository with my not-so-elegant but working solution to add the functionality of opening from Dolphin (KDE file manager) a ssh terminal to the current folder. 
 
 Summarised: create a new service where the exec passes the full address that you see in dolphin (`sftp:[or fish]//user@server:22/folder`) to a temporal file, then an auxiliary script parses that file to create the desired command into another temporal file, then run the last one in konsole.
 
