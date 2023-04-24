@@ -1,0 +1,1 @@
+cat /tmp/str2kon | awk -F"//|:22" '{print "ssh -X -t " $2 " \"cd "  $3 "; bash --login\" "}' > /tmp/ssh.comm

@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=openSshKonsole;
+X-KDE-AuthorizeAction=shell_access
+Icon=utilities-terminal
+
+[Desktop Action openSshKonsole]
+TryExec=konsole
+Exec=/bin/sh -c "echo %u > /tmp/str2kon; bash aux4ssh; konsole -e bash /tmp/ssh.comm"
+Icon=utilities-terminal
+
+Name=Open ssh in Konsole
+Name[de]=ssh in Konsole ausführen
+Name[en_GB]=Open ssh In Konsole
+Name[es]=Ejecutar ssh en Konsole
+
+Comment=Run within Konsole
+Comment[de]=In Konsole ausführen
+Comment[en_GB]=Run within Konsole
+Comment[es]=Ejecutar en Konsole
